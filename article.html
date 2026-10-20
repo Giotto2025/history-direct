@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notizia | History Direct</title>
+
+  <link rel="stylesheet" href="css/article.css">
+
+  <!-- Libreria per le mappe interattive -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  >
+
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    defer
+  ></script>
+
+  <script src="js/article.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">HISTORY DIRECT</a>
+    <a href="index.html" class="back-link">← Torna alla homepage</a>
+  </header>
+
+  <main class="article-container">
+    <p id="category" class="category"></p>
+
+    <h1 id="title">Caricamento della notizia...</h1>
+
+    <p id="subtitle" class="subtitle"></p>
+
+    <div class="article-meta">
+      <span id="historical-date"></span>
+      <span id="location"></span>
+    </div>
+
+    <hr>
+
+    <section class="article-content">
+      <h2>La notizia</h2>
+      <p id="summary"></p>
+      <p id="content"></p>
+    </section>
+
+    <section class="map-section">
+      <h2>Dove è accaduto?</h2>
+      <p id="map-description"></p>
+      <div id="map" aria-label="Mappa del luogo storico"></div>
+    </section>
+
+    <section class="related-section">
+      <h2>Continua a seguire la storia</h2>
+      <div id="related-articles" class="related-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    HISTORY DIRECT — La storia raccontata come attualità
+  </footer>
+</body>
+</html>

@@ -1,97 +1,96 @@
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="History Direct: esplora gli eventi che hanno cambiato la storia.">
-  <title>History Direct — Il passato, in tempo reale</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+
+  <title>History Direct — Il giornale del passato</title>
+  <meta name="description" content="Segui la storia come se fosse una notizia in tempo reale.">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/intro.css">
 </head>
+
 <body>
+    
+<!-- Introduzione iniziale History Direct -->
+<div id="big-bang-intro" role="status" aria-label="Introduzione di History Direct">
+  <div class="intro-universe" aria-hidden="true">
+    <div class="intro-flash"></div>
+  </div>
 
-  <header class="testata">
-    <a class="logo" href="#">HISTORY DIRECT<span>.</span></a>
-    <p>IL PASSATO, IN TEMPO REALE</p>
+  <div class="intro-content">
+    <p class="intro-kicker">Il giornale quotidiano del passato</p>
 
-    <nav>
-      <a href="#ultime">Notizie</a>
-      <a href="#cronologia">Cronologia</a>
-      <a href="#ricerca">Ricerca storica</a>
-      <a href="#mappa">Mappe</a>
-      <a href="#interviste">Interviste</a>
+    <h1 class="intro-title">
+      HISTORY <span>DIRECT</span>
+    </h1>
+
+    <p class="intro-tagline">
+      La storia, in diretta.
+    </p>
+  </div>
+
+  <button class="intro-skip" type="button">
+    Salta introduzione →
+  </button>
+</div>
+<!-- Fine introduzione -->
+
+  <header class="site-header">
+    <a class="logo" href="index.html">HISTORY DIRECT</a>
+    <p class="tagline">Il giornale quotidiano del passato</p>
+
+    <nav aria-label="Navigazione principale">
+      <a href="#ultimora">Ultim'ora</a>
+      <a href="#ultime-notizie">Ultime notizie</a>
+      <a href="#archivio">Archivio</a>
     </nav>
   </header>
 
-  <main>
-    <section class="introduzione">
-      <p class="soprattitolo">IL GIORNALE DELLA STORIA</p>
-      <h1>Il passato torna a fare notizia.</h1>
-      <p>
-        Scopri gli eventi, i personaggi e le decisioni
-        che hanno cambiato il mondo.
-      </p>
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">LA STORIA, IN DIRETTA</p>
+      <h1>Il passato è appena successo.</h1>
+      <p>Eventi, personaggi e rivoluzioni raccontati come notizie di oggi.</p>
     </section>
 
-    <section id="ultime">
-      <h2>Ultime notizie dal passato</h2>
-      <p class="descrizione">
-        Eventi storici raccontati con uno sguardo moderno.
-      </p>
-      <div id="lista-notizie" class="griglia-notizie"></div>
+    <section class="search-section" aria-labelledby="search-title">
+      <h2 id="search-title">Cerca nella storia</h2>
+      <label for="search-input">
+        Data, epoca, luogo o personaggio
+      </label>
+      <input
+        id="search-input"
+        type="search"
+        placeholder="Es. Cesare, Roma, 1789..."
+      >
+      <p id="search-status" aria-live="polite"></p>
     </section>
 
-    <section id="cronologia">
-      <h2>La storia in ordine cronologico</h2>
-      <label for="ordine">Ordina gli eventi:</label>
-      <select id="ordine">
-        <option value="recente">Dal più recente al più antico</option>
-        <option value="antico">Dal più antico al più recente</option>
-      </select>
+    <section id="ultimora">
+      <h2><span class="live-dot"></span> Ultim'ora</h2>
+      <div id="breaking-news" class="news-grid"></div>
     </section>
 
-    <section id="ricerca">
-      <h2>Esplora l'archivio storico</h2>
-      <p class="descrizione">
-        Cerca per titolo, luogo, epoca o personaggio.
-      </p>
-      <label for="cerca">Che cosa vuoi scoprire?</label>
-      <input id="cerca" type="search"
-        placeholder="Es. Napoleone, Roma, 1789...">
-      <p id="numero-risultati" aria-live="polite"></p>
+    <section id="ultime-notizie">
+      <h2>Ultime notizie</h2>
+      <div id="latest-news" class="news-grid"></div>
     </section>
 
-    <section id="mappa">
-      <h2>La storia sulla mappa</h2>
-      <p class="descrizione">
-        In questa sezione inseriremo mappe interattive
-        collegate agli articoli.
-      </p>
-      <div class="sezione-in-costruzione">
-        <span>MAPPE STORICHE</span>
-        <p>Prossimamente: luoghi, confini e percorsi del passato.</p>
-      </div>
-    </section>
-
-    <section id="interviste">
-      <h2>Voci dal passato</h2>
-      <p class="descrizione">
-        Interviste simulate con l'intelligenza artificiale,
-        basate su fonti storiche.
-      </p>
-      <div class="sezione-in-costruzione">
-        <span>ARCHIVIO DELLE TESTIMONIANZE</span>
-        <p>Prossimamente: dialoghi con personaggi storici.</p>
-      </div>
+    <section id="archivio">
+      <h2>Archivio storico</h2>
+      <p>Esplora gli eventi attraverso le epoche e i personaggi.</p>
+      <div id="archive-news" class="news-grid"></div>
     </section>
   </main>
 
   <footer>
-    <a class="logo" href="#">HISTORY DIRECT<span>.</span></a>
-    <p>La storia continua. Cambia solo il momento in cui la leggi.</p>
-    <p>© 2026 History Direct — Progetto indipendente di divulgazione storica.</p>
+    <p>HISTORY DIRECT · La storia raccontata come attualità</p>
+    <p>I contenuti ricostruiti sono distinti dai fatti documentati.</p>
   </footer>
-
+  <script src="js/intro.js" defer></script>
 </body>
 </html>
