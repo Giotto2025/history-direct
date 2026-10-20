@@ -1,0 +1,228 @@
+
+/* HISTORY DIRECT — INTRODUZIONE BIG BANG */
+
+#big-bang-intro {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: #080808;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+#big-bang-intro.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.intro-universe {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at center,
+      rgba(198, 40, 40, 0.16),
+      transparent 35%),
+    #080808;
+}
+
+.intro-flash {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: white;
+  box-shadow:
+    0 0 30px 12px rgba(255, 255, 255, 0.65),
+    0 0 100px 35px rgba(198, 40, 40, 0.5);
+  transform: translate(-50%, -50%) scale(0);
+  animation: big-bang-flash 1.6s ease-out forwards;
+}
+
+.intro-particle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+  animation: particle-expand 2.2s ease-out forwards;
+}
+
+.intro-particle.is-red {
+  background: #c62828;
+  box-shadow: 0 0 10px rgba(198, 40, 40, 0.9);
+}
+
+.intro-content {
+  position: relative;
+  z-index: 2;
+  width: min(90%, 900px);
+  text-align: center;
+  animation: intro-title-appear 1s ease 1s both;
+}
+
+.intro-kicker {
+  margin: 0 0 18px;
+  color: #e34b4b;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.intro-title {
+  margin: 0;
+  font-size: clamp(2.6rem, 9vw, 6.5rem);
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+}
+
+.intro-title span {
+  color: #d32f2f;
+}
+
+.intro-tagline {
+  margin: 24px 0 0;
+  color: #c8c8c8;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  font-style: italic;
+}
+
+.intro-skip {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  z-index: 3;
+  padding: 12px 16px;
+  border: 1px solid #777;
+  border-radius: 3px;
+  background: transparent;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.intro-skip:hover,
+.intro-skip:focus-visible {
+  border-color: #e34b4b;
+  background: #c62828;
+  outline: none;
+}
+
+@keyframes big-bang-flash {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(35);
+  }
+}
+
+@keyframes particle-expand {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.3);
+  }
+  15% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform:
+      translate(
+        calc(-50% + var(--dx)),
+        calc(-50% + var(--dy))
+      )
+      scale(1.5);
+  }
+}
+
+@keyframes intro-title-appear {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #big-bang-intro,
+  .intro-flash,
+  .intro-particle,
+  .intro-content {
+    animation: none;
+    transition: none;
+  }
+
+  .intro-flash,
+  .intro-particle {
+    display: none;
+  }
+}
+
+
+/* TRANSIZIONE CINEMATOGRAFICA IN USCITA */
+
+#big-bang-intro {
+  transition:
+    opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    visibility 0s linear 0.9s;
+}
+
+#big-bang-intro.is-exiting {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#big-bang-intro.is-exiting .intro-universe {
+  transform: scale(1.16);
+  filter: blur(3px);
+  transition:
+    transform 1s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 0.8s ease;
+}
+
+#big-bang-intro.is-exiting .intro-content {
+  opacity: 0;
+  transform: translateY(-12px) scale(1.025);
+  transition:
+    opacity 0.45s ease,
+    transform 0.65s ease;
+}
+
+#big-bang-intro.is-exiting .intro-skip {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #big-bang-intro.is-exiting .intro-universe,
+  #big-bang-intro.is-exiting .intro-content,
+  #big-bang-intro.is-exiting .intro-skip {
+    transition: none;
+    transform: none;
+    filter: none;
+  }
+}

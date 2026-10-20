@@ -1,0 +1,252 @@
+:root {
+  --ink: #171717;
+  --muted: #666666;
+  --paper: #ffffff;
+  --background: #f3f3f1;
+  --accent: #c62828;
+  --line: #dededb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+.site-header {
+  background: var(--paper);
+  border-bottom: 3px solid var(--ink);
+  padding: 24px 5%;
+  text-align: center;
+}
+
+.logo {
+  color: var(--ink);
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  font-weight: 900;
+  letter-spacing: -1.5px;
+  text-decoration: none;
+}
+
+.tagline {
+  color: var(--muted);
+  margin: 0 0 18px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 22px;
+}
+
+nav a {
+  color: var(--ink);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+.container {
+  width: min(1100px, 90%);
+  margin: 0 auto;
+}
+
+.hero {
+  padding: 64px 0 48px;
+  border-bottom: 1px solid var(--line);
+}
+
+.eyebrow {
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  max-width: 760px;
+  font-family: Georgia, serif;
+  font-size: clamp(2.4rem, 6vw, 4.5rem);
+  line-height: 1.08;
+  margin: 12px 0;
+}
+
+.search-section {
+  margin: 30px 0;
+  padding: 24px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.search-section label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--muted);
+}
+
+input[type="search"] {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font: inherit;
+}
+
+section[id] {
+  scroll-margin-top: 20px;
+}
+
+.container > section:not(.hero) {
+  margin-bottom: 48px;
+}
+
+.container h2 {
+  font-family: Georgia, serif;
+  font-size: 1.8rem;
+}
+
+.live-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: var(--accent);
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.news-card {
+  padding: 20px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.news-card .category {
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.news-card h3 {
+  font-family: Georgia, serif;
+  font-size: 1.35rem;
+  line-height: 1.3;
+}
+
+.news-card p {
+  color: var(--muted);
+}
+
+.news-card .read-more {
+  color: var(--accent);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer {
+  padding: 28px 5%;
+  background: var(--ink);
+  color: white;
+  text-align: center;
+}
+
+footer p {
+  margin: 5px;
+}
+
+@media (max-width: 700px) {
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding-top: 40px;
+  }
+
+  nav {
+    gap: 12px;
+  }
+}
+
+/* INGRESSO ANIMATO DELLA HOMEPAGE */
+
+@keyframes newspaper-enter {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* La testata entra per prima */
+body.homepage-entering header {
+  animation: newspaper-enter 0.55s ease-out both;
+}
+
+/* La sezione introduttiva della homepage */
+body.homepage-entering .hero {
+  animation: newspaper-enter 0.55s ease-out 0.12s both;
+}
+
+/* Prima le notizie principali, poi l'ultim'ora */
+body.homepage-entering #latest-news {
+  animation: newspaper-enter 0.55s ease-out 0.25s both;
+}
+
+body.homepage-entering #breaking-news {
+  animation: newspaper-enter 0.55s ease-out 0.4s both;
+}
+
+/* Le schede entrano con un breve ritardo progressivo */
+body.homepage-entering .news-card {
+  animation: newspaper-enter 0.4s ease-out both;
+}
+
+body.homepage-entering .news-card:nth-child(1) {
+  animation-delay: 0.08s;
+}
+
+body.homepage-entering .news-card:nth-child(2) {
+  animation-delay: 0.16s;
+}
+
+body.homepage-entering .news-card:nth-child(3) {
+  animation-delay: 0.24s;
+}
+
+/* Rispetta le preferenze di accessibilità */
+@media (prefers-reduced-motion: reduce) {
+  body.homepage-entering header,
+  body.homepage-entering .hero,
+  body.homepage-entering #latest-news,
+  body.homepage-entering #breaking-news,
+  body.homepage-entering .news-card {
+    animation: none !important;
+  }
+}
