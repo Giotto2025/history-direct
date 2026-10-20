@@ -1,1 +1,59 @@
-
+[
+  {
+    "id": "rubicone",
+    "title": "Cesare attraversa il Rubicone",
+    "subtitle": "Roma si avvicina alla guerra civile.",
+    "historicalDate": "49 a.C.",
+    "publicationOrder": 3,
+    "era": "Antichità",
+    "location": "Rubicone, Italia",
+    "people": ["Giulio Cesare", "Pompeo"],
+    "category": "Politica",
+    "breaking": true,
+    "narrativeMode": true,
+    "summary": "La decisione di Cesare apre una crisi decisiva nella Repubblica romana.",
+    "relatedArticles": ["pompeo", "repubblica-romana"],
+    "coordinates": {
+  "lat": 44.1,
+  "lng": 12.3
+}
+  },
+  {
+    "id": "pompeo",
+    "title": "La crisi tra Cesare e Pompeo",
+    "subtitle": "Lo scontro politico divide Roma.",
+    "historicalDate": "49 a.C.",
+    "publicationOrder": 2,
+    "era": "Antichità",
+    "location": "Roma",
+    "people": ["Giulio Cesare", "Pompeo"],
+    "category": "Politica",
+    "breaking": false,
+    "narrativeMode": true,
+    "summary": "La rivalità tra i due protagonisti mette alla prova le istituzioni romane.",
+    "relatedArticles": ["rubicone"],
+    "coordinates": {
+  "lat": 41.9028,
+  "lng": 12.4964
+}
+  },
+  {
+    "id": "rivoluzione-francese",
+    "title": "La presa della Bastiglia scuote Parigi",
+    "subtitle": "Una giornata destinata a diventare simbolo della Rivoluzione.",
+    "historicalDate": "14 luglio 1789",
+    "publicationOrder": 1,
+    "era": "Età moderna",
+    "location": "Parigi, Francia",
+    "people": ["Luigi XVI"],
+    "category": "Rivoluzione",
+    "breaking": false,
+    "narrativeMode": false,
+    "summary": "La presa della fortezza parigina diventa uno degli eventi simbolo della Rivoluzione francese.",
+    "relatedArticles": [],
+    "coordinates": {
+  "lat": 48.8566,
+  "lng": 2.3522
+}
+  }
+]
