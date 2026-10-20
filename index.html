@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="History Direct: esplora gli eventi che hanno cambiato la storia.">
+  <title>History Direct — Il passato, in tempo reale</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="testata">
+    <a class="logo" href="#">HISTORY DIRECT<span>.</span></a>
+    <p>IL PASSATO, IN TEMPO REALE</p>
+
+    <nav>
+      <a href="#ultime">Notizie</a>
+      <a href="#cronologia">Cronologia</a>
+      <a href="#ricerca">Ricerca storica</a>
+      <a href="#mappa">Mappe</a>
+      <a href="#interviste">Interviste</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="introduzione">
+      <p class="soprattitolo">IL GIORNALE DELLA STORIA</p>
+      <h1>Il passato torna a fare notizia.</h1>
+      <p>
+        Scopri gli eventi, i personaggi e le decisioni
+        che hanno cambiato il mondo.
+      </p>
+    </section>
+
+    <section id="ultime">
+      <h2>Ultime notizie dal passato</h2>
+      <p class="descrizione">
+        Eventi storici raccontati con uno sguardo moderno.
+      </p>
+      <div id="lista-notizie" class="griglia-notizie"></div>
+    </section>
+
+    <section id="cronologia">
+      <h2>La storia in ordine cronologico</h2>
+      <label for="ordine">Ordina gli eventi:</label>
+      <select id="ordine">
+        <option value="recente">Dal più recente al più antico</option>
+        <option value="antico">Dal più antico al più recente</option>
+      </select>
+    </section>
+
+    <section id="ricerca">
+      <h2>Esplora l'archivio storico</h2>
+      <p class="descrizione">
+        Cerca per titolo, luogo, epoca o personaggio.
+      </p>
+      <label for="cerca">Che cosa vuoi scoprire?</label>
+      <input id="cerca" type="search"
+        placeholder="Es. Napoleone, Roma, 1789...">
+      <p id="numero-risultati" aria-live="polite"></p>
+    </section>
+
+    <section id="mappa">
+      <h2>La storia sulla mappa</h2>
+      <p class="descrizione">
+        In questa sezione inseriremo mappe interattive
+        collegate agli articoli.
+      </p>
+      <div class="sezione-in-costruzione">
+        <span>MAPPE STORICHE</span>
+        <p>Prossimamente: luoghi, confini e percorsi del passato.</p>
+      </div>
+    </section>
+
+    <section id="interviste">
+      <h2>Voci dal passato</h2>
+      <p class="descrizione">
+        Interviste simulate con l'intelligenza artificiale,
+        basate su fonti storiche.
+      </p>
+      <div class="sezione-in-costruzione">
+        <span>ARCHIVIO DELLE TESTIMONIANZE</span>
+        <p>Prossimamente: dialoghi con personaggi storici.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo" href="#">HISTORY DIRECT<span>.</span></a>
+    <p>La storia continua. Cambia solo il momento in cui la leggi.</p>
+    <p>© 2026 History Direct — Progetto indipendente di divulgazione storica.</p>
+  </footer>
+
+</body>
+</html>
