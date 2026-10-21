@@ -3,6 +3,7 @@ const titleElement = document.querySelector("#title");
 const subtitleElement = document.querySelector("#subtitle");
 const categoryElement = document.querySelector("#category");
 const dateElement = document.querySelector("#historical-date");
+const datepublicationElement =document.querySelector("#publication-date");
 const locationElement = document.querySelector("#location");
 const summaryElement = document.querySelector("#summary");
 const contentElement = document.querySelector("#content");
@@ -112,6 +113,8 @@ async function loadArticle() {
     categoryElement.textContent = article.category || "Storia";
     dateElement.textContent =
       `Data storica: ${article.historicalDate || "Non specificata"}`;
+      datepublicationElement.textContent =
+      `Data pubblicazione: ${article.publicationDate || "Non specificata"}`;
     locationElement.textContent =
       `Luogo: ${article.location || "Non specificato"}`;
     summaryElement.textContent = article.summary || "";
