@@ -250,3 +250,14 @@ body.homepage-entering .news-card:nth-child(3) {
     animation: none !important;
   }
 }
+
+/* Immagini nelle schede delle notizie */
+
+.news-card-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 14px;
+}
