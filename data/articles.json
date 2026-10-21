@@ -1,63 +1,25 @@
 [
   {
-    "id": "rubicone",
-    "title": "Cesare attraversa il Rubicone",
-    "image": "images/cesare-rubicone.jpg",
-    "imageAlt": "Ricostruzione IA di Cesare che attraversa il Rubicone",
-    "imageCaption": "Ricostruzione artistica dell'attraversamento del Rubicone.",
-    "subtitle": "Roma si avvicina alla guerra civile.",
-    "historicalDate": "49 a.C.",
-    "publicationOrder": 3,
-    "era": "Antichità",
-    "location": "Rubicone, Italia",
-    "people": ["Giulio Cesare", "Pompeo"],
-    "category": "Politica",
-    "breaking": true,
-    "narrativeMode": true,    
-    "summary": "Il 49 a.C. segna una svolta drammatica per Roma: Giulio Cesare attraversa il Rubicone con le sue truppe, sfidando l'autorità del Senato e aprendo una crisi che porterà alla guerra civile.",
-    "content": "UNA DECISIONE CHE CAMBIA ROMA\n\nRUBICONE, 49 a.C. — La Repubblica romana entra in una delle sue crisi più pericolose. Giulio Cesare, generale vittorioso dopo anni di campagne in Gallia, si trova davanti a una scelta decisiva: rinunciare al proprio comando e affrontare le conseguenze politiche a Roma, oppure mantenere le sue truppe unite e sfidare gli avversari.\n\nLO SCONTRO POLITICO\n\nDa tempo i rapporti tra Cesare e una parte influente del Senato sono sempre più tesi. I suoi successi militari gli hanno procurato prestigio, ricchezze e un forte seguito tra i soldati. I suoi avversari, tuttavia, temono che la sua influenza possa mettere in pericolo gli equilibri della Repubblica.\n\nAl centro della crisi c'è anche Pompeo, un tempo alleato politico di Cesare e ora sempre più vicino ai suoi oppositori. La collaborazione che aveva contribuito a determinare la politica romana si è ormai indebolita, mentre cresce il rischio di uno scontro aperto.\n\nIL PASSAGGIO DEL FIUME\n\nNel gennaio del 49 a.C., Cesare conduce le sue truppe oltre il Rubicone, un piccolo corso d'acqua nell'Italia settentrionale che segnava il confine oltre il quale un comandante non poteva entrare in armi nella provincia d'Italia. Il gesto trasforma una crisi politica in una sfida militare diretta.\n\nL'episodio è diventato celebre anche per la frase Alea iacta est, tradizionalmente attribuita a Cesare e comunemente tradotta come «Il dado è tratto». La formulazione esatta e il contesto della citazione dipendono dalle fonti antiche, ma il suo significato simbolico è rimasto legato a una decisione dalla quale non si torna facilmente indietro.\n\nROMA VERSO LA GUERRA CIVILE\n\nIl passaggio del Rubicone non risolve il conflitto: lo rende irreversibile. Pompeo e numerosi senatori lasciano l'Italia, mentre Cesare avanza e cerca di consolidare la propria posizione. Nei mesi successivi lo scontro si estende e diventa una guerra civile che metterà in discussione il futuro delle istituzioni repubblicane.\n\nPERCHÉ QUESTO EVENTO È IMPORTANTE\n\nIl Rubicone è ricordato come il simbolo del momento in cui Cesare scelse di usare la forza militare per risolvere una crisi politica. La fine della Repubblica non fu causata da un solo episodio, ma il passaggio del fiume rappresentò una svolta decisiva nel lungo processo di concentrazione del potere che avrebbe trasformato Roma.",
-    "relatedArticles": ["pompeo", "repubblica-romana"],
-    "coordinates": {
-  "lat": 44.1,
-  "lng": 12.3
-}
-  },
-  {
-    "id": "pompeo",
-    "title": "La crisi tra Cesare e Pompeo",
-    "subtitle": "Lo scontro politico divide Roma.",
-    "historicalDate": "49 a.C.",
-    "publicationOrder": 2,
-    "era": "Antichità",
-    "location": "Roma",
-    "people": ["Giulio Cesare", "Pompeo"],
-    "category": "Politica",
-    "breaking": false,
-    "narrativeMode": true,
-    "summary": "La rivalità tra i due protagonisti mette alla prova le istituzioni romane.",
-    "relatedArticles": ["rubicone"],
-    "coordinates": {
-  "lat": 41.9028,
-  "lng": 12.4964
-}
-  },
-  {
-    "id": "rivoluzione-francese",
-    "title": "La presa della Bastiglia scuote Parigi",
-    "subtitle": "Una giornata destinata a diventare simbolo della Rivoluzione.",
-    "historicalDate": "14 luglio 1789",
-    "publicationOrder": 1,
-    "era": "Età moderna",
-    "location": "Parigi, Francia",
-    "people": ["Luigi XVI"],
-    "category": "Rivoluzione",
-    "breaking": false,
-    "narrativeMode": false,
-    "summary": "La presa della fortezza parigina diventa uno degli eventi simbolo della Rivoluzione francese.",
-    "relatedArticles": [],
-    "coordinates": {
-  "lat": 48.8566,
-  "lng": 2.3522
-}
+"id": "nascita-della-terra",
+"title": "Nasce la Terra: prende forma il nostro pianeta",
+"image": "images/nascita-terra.jpg",
+"imageAlt": "Ricostruzione artistica della Terra primordiale ricoperta di magma",
+"imageCaption": "Ricostruzione artistica delle prime fasi di formazione del pianeta Terra.",
+"subtitle": "Nel Sistema Solare in formazione prende forma il nostro pianeta.",
+"historicalDate": "4,5 miliardi di anni fa",
+"publicationOrder": 1,
+"era": "Preistoria e Origini",
+"location": "Sistema Solare",
+"people": [],
+"category": "Scienza e Natura",
+"breaking": true,
+"narrativeMode": true,
+"summary": "Oltre 4,5 miliardi di anni fa, polveri e gas cosmici attorno al giovane Sole si congiungono attraverso intensi processi di accrescimento e collisioni violentissime, dando origine al pianeta Terra.",
+"content": "L'ORIGINE DEL NOSTRO MONDO\n\nSISTEMA SOLARE, 4,5 MILIARDI DI ANNI FA — Nel vasto disco di polveri e gas raggruppato attorno al giovane Sole prende forma un nuovo corpo celeste. Attraverso un processo continuo di accrescimento e violenti impatti tra asteroidi e protopianeti, la Terra comincia a consolidarsi, emergendo dal caos primordiale del Sistema Solare.\n\nUN PIANETA INFOCATO\n\nNelle sue prime fasi di vita, la Terra si presenta come un mondo inospitale e visivamente incandescente. L'energia sprigionata dalle frequenti collisioni e dai processi di decadimento radioattivo interno mantiene la superficie allo stato fuso, coperta da vasti oceani di magma e scossa da un'intensa attività vulcanica.\n\nLA STRUTTURAZIONE INTERNA\n\nCon il passare dei milioni di anni, i materiali più densi come il ferro e il nichel sprofondano verso il centro per gravità, andando a formare il nucleo metallico del pianeta. Gli elementi più leggeri, come i silicati, risalgono in superficie creando il mantello e, gradualmente, una prima crosta solida.\n\nL'IMPATTO CON THEIA E LA LUNA\n\nUn evento drammatico segna la storia primordiale del pianeta: la collisione con un corpo celeste delle dimensioni di Marte, noto come Theia. I detriti scagliati nello spazio da questo immenso impatto si riaggregano nell'orbita terrestre, dando origine alla Luna e influenzando stabilmente l'asse di rotazione della Terra.\n\nL'ATMOSFERA PRIMORDIALE E I PRIMI OCEANI\n\nI gas rilasciati dai vulcani e dagli impatti cometari formano una prima e densa atmosfera, priva di ossigeno e ricca di vapore acqueo, anidride carbonica e azoto. Con il progressivo raffreddamento della crosta, il vapore acqueo condensa dando inizio a piogge torrenziali che riempiono le depressioni della superficie, formando i primi oceani primordiali.\n\nPERCHÉ QUESTO EVENTO È IMPORTANTE\n\nLa formazione della Terra e il suo successivo raffreddamento gettano le basi fisiche e chimiche per lo sviluppo di un ambiente unico nel Sistema Solare. Senza la stabilizzazione della crosta, la presenza dell'acqua liquida e la formazione di un'atmosfera protettiva, la vita non avrebbe mai potuto fare la sua comparsa sul nostro pianeta.",
+"relatedArticles": ["formazione-luna", "origine-della-vita"],
+"coordinates": {
+"lat": 0.0,
+"lng": 0.0
+  }
   }
 ]
