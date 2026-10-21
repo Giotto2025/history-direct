@@ -1,1 +1,25 @@
-
+[
+  {
+"id": "nascita-della-terra",
+"title": "Nasce la Terra: prende forma il nostro pianeta",
+"image": "images/nascita-terra.jpg",
+"imageAlt": "Ricostruzione artistica della Terra primordiale ricoperta di magma",
+"imageCaption": "Ricostruzione artistica delle prime fasi di formazione del pianeta Terra.",
+"subtitle": "Nel Sistema Solare in formazione prende forma il nostro pianeta.",
+"historicalDate": "4,5 miliardi di anni fa",
+"publicationOrder": 1,
+"era": "Preistoria e Origini",
+"location": "Sistema Solare",
+"people": [],
+"category": "Scienza e Natura",
+"breaking": true,
+"narrativeMode": true,
+"summary": "Oltre 4,5 miliardi di anni fa, polveri e gas cosmici attorno al giovane Sole si congiungono attraverso intensi processi di accrescimento e collisioni violentissime, dando origine al pianeta Terra.",
+"content": "L'ORIGINE DEL NOSTRO MONDO\n\nSISTEMA SOLARE, 4,5 MILIARDI DI ANNI FA — Nel vasto disco di polveri e gas raggruppato attorno al giovane Sole prende forma un nuovo corpo celeste. Attraverso un processo continuo di accrescimento e violenti impatti tra asteroidi e protopianeti, la Terra comincia a consolidarsi, emergendo dal caos primordiale del Sistema Solare.\n\nUN PIANETA INFOCATO\n\nNelle sue prime fasi di vita, la Terra si presenta come un mondo inospitale e visivamente incandescente. L'energia sprigionata dalle frequenti collisioni e dai processi di decadimento radioattivo interno mantiene la superficie allo stato fuso, coperta da vasti oceani di magma e scossa da un'intensa attività vulcanica.\n\nLA STRUTTURAZIONE INTERNA\n\nCon il passare dei milioni di anni, i materiali più densi come il ferro e il nichel sprofondano verso il centro per gravità, andando a formare il nucleo metallico del pianeta. Gli elementi più leggeri, come i silicati, risalgono in superficie creando il mantello e, gradualmente, una prima crosta solida.\n\nL'IMPATTO CON THEIA E LA LUNA\n\nUn evento drammatico segna la storia primordiale del pianeta: la collisione con un corpo celeste delle dimensioni di Marte, noto come Theia. I detriti scagliati nello spazio da questo immenso impatto si riaggregano nell'orbita terrestre, dando origine alla Luna e influenzando stabilmente l'asse di rotazione della Terra.\n\nL'ATMOSFERA PRIMORDIALE E I PRIMI OCEANI\n\nI gas rilasciati dai vulcani e dagli impatti cometari formano una prima e densa atmosfera, priva di ossigeno e ricca di vapore acqueo, anidride carbonica e azoto. Con il progressivo raffreddamento della crosta, il vapore acqueo condensa dando inizio a piogge torrenziali che riempiono le depressioni della superficie, formando i primi oceani primordiali.\n\nPERCHÉ QUESTO EVENTO È IMPORTANTE\n\nLa formazione della Terra e il suo successivo raffreddamento gettano le basi fisiche e chimiche per lo sviluppo di un ambiente unico nel Sistema Solare. Senza la stabilizzazione della crosta, la presenza dell'acqua liquida e la formazione di un'atmosfera protettiva, la vita non avrebbe mai potuto fare la sua comparsa sul nostro pianeta.",
+"relatedArticles": ["formazione-luna", "origine-della-vita"],
+"coordinates": {
+"lat": 0.0,
+"lng": 0.0
+  }
+  }
+]
