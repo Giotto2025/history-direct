@@ -24,9 +24,21 @@ async function loadArticles() {
   }
 }
 
+
 function createCard(article) {
   const card = document.createElement("article");
   card.className = "news-card";
+
+  // Immagine della notizia, se presente nell'archivio.
+  if (article.image) {
+    const image = document.createElement("img");
+    image.className = "news-card-image";
+    image.src = article.image;
+    image.alt = article.imageAlt || article.title;
+    image.loading = "lazy";
+
+    card.append(image);
+  }
 
   const category = document.createElement("p");
   category.className = "category";
@@ -49,6 +61,7 @@ function createCard(article) {
   card.append(category, title, date, summary, link);
   return card;
 }
+
 
 function renderList(container, list) {
   container.replaceChildren();

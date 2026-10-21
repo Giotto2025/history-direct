@@ -8,8 +8,75 @@ const summaryElement = document.querySelector("#summary");
 const contentElement = document.querySelector("#content");
 const mapDescription = document.querySelector("#map-description");
 const relatedContainer = document.querySelector("#related-articles");
+const articleImageContainer = document.querySelector(
+  "#article-image-container"
+);
+const articleImage = document.querySelector("#article-image");
+const articleImageCaption = document.querySelector(
+  "#article-image-caption"
+);
 
 let mapInstance = null;
+
+function showArticleImage(article) {
+  if (!articleImageContainer || !articleImage || !articleImageCaption) {
+    return;
+  }
+
+  if (!article.image) {
+    articleImageContainer.hidden = true;
+    articleImage.removeAttribute("src");
+    return;
+  }
+
+  articleImage.src = article.image;
+  articleImage.alt = article.imageAlt || article.title || "";
+
+  articleImageCaption.textContent = article.imageCaption || "";
+
+  articleImageContainer.hidden = false;
+
+  articleImage.onerror = () => {
+    articleImageContainer.hidden = true;
+    console.error("Impossibile caricare l'immagine:", article.image);
+  };
+}
+
+
+function renderArticleContent(content) {
+  contentElement.replaceChildren();
+  contentElement.classList.add("article-body");
+
+  const sections = content.split(/\n\s*\n/);
+
+  sections.forEach(section => {
+    const text = section.trim();
+
+    if (!text) return;
+
+    // Riconosce le righe scritte interamente in maiuscolo
+    // e le trasforma in sottotitoli.
+    const isHeading =
+      /[A-ZÀ-ÖØ-Þ]/.test(text) &&
+      text === text.toLocaleUpperCase("it") &&
+      text.length < 100;
+
+    if (isHeading) {
+      const heading = document.createElement("h2");
+      heading.textContent = text;
+      contentElement.append(heading);
+    } else {
+      const paragraph = document.createElement("p");
+
+      // Mantiene uniti eventuali a capo all'interno del paragrafo.
+      paragraph.textContent = text.replace(/\s*\n\s*/g, " ");
+
+      contentElement.append(paragraph);
+    }
+  });
+}
+
+
 
 async function loadArticle() {
   try {
@@ -48,10 +115,13 @@ async function loadArticle() {
     locationElement.textContent =
       `Luogo: ${article.location || "Non specificato"}`;
     summaryElement.textContent = article.summary || "";
-    contentElement.textContent =
-      article.content || "Il testo completo sarà aggiunto prossimamente.";
+    renderArticleContent(
+    article.content || "Il testo completo sarà aggiunto prossimamente."
+    );
 
-    // 5. Inizializza la mappa, se ci sono coordinate
+    showArticleImage(article);
+
+      // 5. Inizializza la mappa, se ci sono coordinate
     showMap(article);
 
     // 6. Carica gli articoli correlati
