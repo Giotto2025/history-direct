@@ -2,6 +2,9 @@
   {
     "id": "rubicone",
     "title": "Cesare attraversa il Rubicone",
+    "image": "images/cesare-rubicone.jpg",
+    "imageAlt": "Ricostruzione IA di Cesare che attraversa il Rubicone",
+    "imageCaption": "Ricostruzione artistica dell'attraversamento del Rubicone.",
     "subtitle": "Roma si avvicina alla guerra civile.",
     "historicalDate": "49 a.C.",
     "publicationOrder": 3,
@@ -10,8 +13,9 @@
     "people": ["Giulio Cesare", "Pompeo"],
     "category": "Politica",
     "breaking": true,
-    "narrativeMode": true,
-    "summary": "La decisione di Cesare apre una crisi decisiva nella Repubblica romana.",
+    "narrativeMode": true,    
+    "summary": "Il 49 a.C. segna una svolta drammatica per Roma: Giulio Cesare attraversa il Rubicone con le sue truppe, sfidando l'autorità del Senato e aprendo una crisi che porterà alla guerra civile.",
+    "content": "UNA DECISIONE CHE CAMBIA ROMA\n\nRUBICONE, 49 a.C. — La Repubblica romana entra in una delle sue crisi più pericolose. Giulio Cesare, generale vittorioso dopo anni di campagne in Gallia, si trova davanti a una scelta decisiva: rinunciare al proprio comando e affrontare le conseguenze politiche a Roma, oppure mantenere le sue truppe unite e sfidare gli avversari.\n\nLO SCONTRO POLITICO\n\nDa tempo i rapporti tra Cesare e una parte influente del Senato sono sempre più tesi. I suoi successi militari gli hanno procurato prestigio, ricchezze e un forte seguito tra i soldati. I suoi avversari, tuttavia, temono che la sua influenza possa mettere in pericolo gli equilibri della Repubblica.\n\nAl centro della crisi c'è anche Pompeo, un tempo alleato politico di Cesare e ora sempre più vicino ai suoi oppositori. La collaborazione che aveva contribuito a determinare la politica romana si è ormai indebolita, mentre cresce il rischio di uno scontro aperto.\n\nIL PASSAGGIO DEL FIUME\n\nNel gennaio del 49 a.C., Cesare conduce le sue truppe oltre il Rubicone, un piccolo corso d'acqua nell'Italia settentrionale che segnava il confine oltre il quale un comandante non poteva entrare in armi nella provincia d'Italia. Il gesto trasforma una crisi politica in una sfida militare diretta.\n\nL'episodio è diventato celebre anche per la frase Alea iacta est, tradizionalmente attribuita a Cesare e comunemente tradotta come «Il dado è tratto». La formulazione esatta e il contesto della citazione dipendono dalle fonti antiche, ma il suo significato simbolico è rimasto legato a una decisione dalla quale non si torna facilmente indietro.\n\nROMA VERSO LA GUERRA CIVILE\n\nIl passaggio del Rubicone non risolve il conflitto: lo rende irreversibile. Pompeo e numerosi senatori lasciano l'Italia, mentre Cesare avanza e cerca di consolidare la propria posizione. Nei mesi successivi lo scontro si estende e diventa una guerra civile che metterà in discussione il futuro delle istituzioni repubblicane.\n\nPERCHÉ QUESTO EVENTO È IMPORTANTE\n\nIl Rubicone è ricordato come il simbolo del momento in cui Cesare scelse di usare la forza militare per risolvere una crisi politica. La fine della Repubblica non fu causata da un solo episodio, ma il passaggio del fiume rappresentò una svolta decisiva nel lungo processo di concentrazione del potere che avrebbe trasformato Roma.",
     "relatedArticles": ["pompeo", "repubblica-romana"],
     "coordinates": {
   "lat": 44.1,
