@@ -7,7 +7,7 @@
 "imageCaption": "Ricostruzione artistica delle prime fasi di formazione del pianeta Terra.",
 "subtitle": "Nel Sistema Solare in formazione prende forma il nostro pianeta.",
 "historicalDate": "4,5 miliardi di anni fa",
-"publicationDate": "1 Novembre 2026",
+"publicationDate": "21 Ottobre 2026",
 "publicationOrder": 1,
 "era": "Preistoria e Origini",
 "location": "Sistema Solare",
@@ -22,5 +22,30 @@
 "lat": 0.0,
 "lng": 0.0
   }
-  }
+  },
+
+  {
+"id": "impatto-theia-luna",
+"title": "Un impatto gigantesco potrebbe aver dato origine alla Luna",
+"image": "images/impatto-luna.jpg",
+"imageAlt": "Ricostruzione IA della collisione tra la Terra primordiale e il corpo celeste Theia",
+"imageCaption": "Ricostruzione artistica dell'impatto catastrofico che ha generato la Luna.",
+"subtitle": "Una collisione colossale con il protopianeta Theia sconvolge la Terra primordiale.",
+"historicalDate": "4,5 miliardi di anni fa",
+"publicationDate": "22 Ottobre 2026",
+"publicationOrder": 2,
+"era": "Preistoria e Origini",
+"location": "Spazio / Orbita terrestre",
+"people": [],
+"category": "Scienza e Natura",
+"breaking": true,
+"narrativeMode": true,
+"summary": "Nelle prime fasi del Sistema Solare, la Terra subisce una collisione catastrofica con un protopianeta delle dimensioni di Marte chiamato Theia. L'enorme quantità di detriti scagliata in orbita si aggregherà progressivamente, dando origine alla Luna.",
+"content": "UNA COLLISIONE CATASTROFICA\n\nSPAZIO PROFONDO, 4,5 MILIARDI DI ANNI FA — Il giovane Sistema Solare è un ambiente caotico e violento, dominato da corpi celesti in rotta di collisione. In questo scenario turbolento, un protopianeta di grandi dimensioni, battezzato dagli astronomi Theia e paragonabile a Marte per grandezza, si scontra frontalmente o obliquamente con la Terra ancora in fase di formazione.\n\nGLI EFFETTI DELLO SCONTRO\n\nL'impatto sprigiona un'energia inimmaginabile, fondendo gran parte della superficie terrestre e vaporizzando immense quantità di roccia. Entrambi i corpi subiscono deformazioni estreme, ma la Terra, grazie alla sua massa superiore, riesce a sopravvivere alla distruzione totale, sebbene profondamente trasformata nella sua struttura e nella sua velocità di rotazione.\n\nLA NASCITA DEI DETRITI IN ORBITA\n\nUna frazione enorme del mantello terrestre e di quello di Theia viene scagliata con violenza oltre i confini del pianeta, formando un vasto anello di detriti incandescenti e polveri che circonda la Terra giovane. Questo immenso disco di materiale in orbita rappresenta il cantiere da cui nascerà il nostro satellite.\n\nL'AGGREGAZIONE DEL SATELLITE\n\nNel giro di poche migliaia di anni, i frammenti rocciosi sospesi nello spazio cominciano ad attrarsi reciprocamente per gravità. I corpi minori si scontrano e si fondono, dando vita a un unico grande corpo sferico in rapida evoluzione: nasce così la Luna, inizialmente molto più vicina alla Terra di quanto non sia oggi.\n\nLE CONSEGUENZE PER IL PIANETA\n\nLa presenza della Luna non è soltanto una spettacolare compagna visiva nel cielo notturno, ma svolge un ruolo cruciale per la stabilità della Terra. L'attrazione gravitazionale del satellite stabilizza l'asse di rotazione terrestre, mitigando le variazioni climatiche estreme e creando le condizioni ideali per la futura comparsa della vita.\n\nPERCHÉ QUESTO EVENTO È IMPORTANTE\n\nL'impatto con Theia è considerato l'episodio chiave che ha plasmato l'architettura del sistema Terra-Luna. Senza questa colossale collisione cosmica, il nostro pianeta avrebbe un asse di rotazione instabile, maree differenti e un ambiente radicalmente diverso da quello che conosciamo oggi.",
+"relatedArticles": ["nascita-della-terra", "origine-della-vita"],
+"coordinates": {
+"lat": 0.0,
+"lng": 0.0
+}
+}
 ]
