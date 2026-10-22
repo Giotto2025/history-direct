@@ -49,6 +49,8 @@ function createCard(article) {
 
   const date = document.createElement("p");
   date.textContent = article.historicalDate;
+  const publicationDate = document.createElement("p");
+  publicationDate.textContent = article.publicationDate;
 
   const summary = document.createElement("p");
   summary.textContent = article.summary;
@@ -58,7 +60,7 @@ function createCard(article) {
   link.href = `article.html?id=${encodeURIComponent(article.id)}`;
   link.textContent = "Leggi la notizia →";
 
-  card.append(category, title, date, summary, link);
+  card.append(category, title, date, publicationDate, summary, link);
   return card;
 }
 
@@ -83,16 +85,18 @@ function renderHomepage() {
     (a, b) => b.publicationOrder - a.publicationOrder
   );
 
+  // Una sola notizia in Ultim'ora
   renderList(
     breakingContainer,
-    ordered.filter(article => article.breaking)
+    ordered.filter(article => article.breaking).slice(0, 1)
   );
 
+  // Tutte le notizie nella sezione Ultime notizie
   renderList(latestContainer, ordered);
 
+  // Tutte le notizie nell'archivio
   renderList(archiveContainer, articles);
 }
-
 function searchArticles() {
   const query = searchInput.value.trim().toLocaleLowerCase("it");
 
